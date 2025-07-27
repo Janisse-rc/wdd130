@@ -10,8 +10,91 @@
 header {
     background-color: var(--primary-color); 
     color: var(--accent2-color);
+    display: grid;                          /* Added for project w04*/
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
+/*Logo*/
+header img{ 
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+}
+
+/* Links*/
+header nav {    
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: azure;
+    border-width: 3px;
+    padding: 15px;
+}
+
+/*How to delete the underlined*/
+header nav a {              /*It is required to type "a" too*/    
+    text-decoration: none;
+}
+/* Scheme History*/
+.history{
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+/*Title "History"*/
+.history h2{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order: -2;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Scheme Adventure Awaits you*/
+.images{
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    margin: 20px;
+
+    /*"gap" creates the space between each column*/
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*The 5 images*/
+figure img{             /*It is required to code as img*/
+    width: 8rem;
+}
+/*Title "Adventure Awaits you"*/
+.images h2{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    order: -2;
+    justify-content: center;
+    align-items: center;   
+}
+
+footer {
+    background-color: rgb(152, 152, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+/*Until here*/
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +123,7 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
+    /*float: right;         #That's not necessary due to it is "flex" */
 }
 
 .hero {
