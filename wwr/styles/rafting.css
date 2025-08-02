@@ -5,34 +5,42 @@
     --accent2-color: #cfdcda;
     --heading-font: "Playfair Display", serif;
     --body-font: "Roboto", sans-serif;
+    --light-color: #ffe57e;
 }
 
 header {
-    background-color: var(--primary-color); 
+    background-color: var(--light-color);  /*The AAA color contrast was fixed*/
     color: var(--accent2-color);
     display: grid;                          /* Added for project w04*/
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr;
     justify-content: center;
     align-items: center;
 }
 
 /*Logo*/
 header img{ 
+    grid-column-start: 1;
+    grid-column-end: 3 ;
     display: flex;
     justify-self: center;
     flex-direction: row;
     align-items: center;
     width: 120px;
+    padding: 10px;
 }
 
 /* Links*/
 header nav {    
+    grid-column-start: 3;
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
+    align-content: center;
     border-style: solid;
     border-color: azure;
     border-width: 3px;
-    padding: 15px;
+    width: 25em;
+    padding: 10px;
 }
 
 /*How to delete the underlined*/
@@ -67,8 +75,7 @@ header nav a {              /*It is required to type "a" too*/
     grid-template-columns:  1fr 1fr 1fr 1fr ;
     margin: 20px;
 
-    /*"gap" creates the space between each column*/
-    gap: 20px;
+    gap: 20px;  /*"gap" creates the space between each column*/
     justify-content: center;
     align-items: center;
 }
@@ -94,11 +101,23 @@ figure figcaption{
 }
 
 footer {
-    background-color: rgb(152, 152, 0);
+    background-color: var(--light-color); /*rgb(152, 152, 0)*/
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+footer p{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+    padding-right: 20px;
 }
 /*Until here*/
 * {
@@ -109,7 +128,7 @@ footer {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #000;
 }
 
 header, main, footer {
@@ -119,7 +138,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #000;    /*The AA color contrast was fixed*/
 }
 
 nav, p, section, article {
@@ -127,9 +146,19 @@ nav, p, section, article {
     padding: 8px;
 }
 
+.socialmedia {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
 .socialmedia a {
     text-decoration: none;
     /*float: right;         #That's not necessary due to it is "flex" */
+}
+
+.socialmedia a img{
+    width: 2rem;
 }
 
 .hero {
@@ -149,8 +178,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: #000;
 }
 
 article {
@@ -159,8 +188,8 @@ article {
     width: 800px;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: rgba(69, 69, 255, 0.596);
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.596); /*The AAA color contrast was fixed*/
     color: #fff;
 
 }
