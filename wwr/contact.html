@@ -48,7 +48,8 @@
             </figure>
         </section>
         <section class="join">
-			<h2>Join Us</h2>
+			<h2>Join Us!
+            <br>Create your account</h2>
             <img src="images/rafting36_1024.webp" alt="Rafting sight">
             <form>
             <fieldset>
@@ -64,27 +65,25 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Questions</legend>
+                <legend>Questions or Suggestions</legend>
                 <!--form elements will go here-->
-                <label for="browser">What is your favorite browser?</label>
-                <div class="form-item column1">
-                    <select id="browser" name="browser">
-                        <option value="chrome">Chrome</option>
-                        <option value="firefox">Firefox</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Edge</option>
-                        <option value="brave">Brave</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-item column1">
-                    <label for="pet">Do you have a household pet?</label>
-                    <input type="checkbox" id="pet" name="pet">
-                </div>
-                <label for="feedback">List the places you have lived:</label>
+                <input type="radio" id="general inquiry" name="select" value="General Inquiry">
+                <label for="general inquiry">General Inquiry</label>
+                <br>
+                <input type="radio" id="reservation question" name="select" value="reservation Question">
+                <label for="reservation question">Reservation Question</label>
+                <br>
+                <input type="radio" id="website suggestion" name="select" value="website suggestion">
+                <label for="website suggestion">Website Suggestion</label>
+                <br>
+                <label for="feedback">Your message:</label>
                 <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                <div class="form-item column1">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
             </fieldset>
-            <button type="submit">Submit Poll</button>
+            <button type="submit">Sign up</button>
         </form>
         </section>
         <section class="history">
