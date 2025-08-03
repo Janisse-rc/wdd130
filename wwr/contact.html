@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting2.css">
+    <link rel="stylesheet" href="styles/contact-poll-form.css">
 </head>
 <body>
     <header>
@@ -22,11 +24,80 @@
         </nav>
     </header>
     <main>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234225.00710047505!2d-80.6964866994051!3d-5.19537885638791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a107c793c39b7%3A0x1de8948d1c01fe28!2sPiura!5e0!3m2!1ses-419!2spe!4v1754156319164!5m2!1ses-419!2spe" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="hero">
+                <img src="images/hero_transparency_1024.webp" alt="Rafting adventure">
+                <h1>Rafting Travel Land</h1>
+                <article>
+                    <p>Get to know all the<br> Adventures!
+                    </p>
+                </article>
+        </div>
+        <section class="employees">
+            <h2>Our Employees</h2>
+            <figure>
+                <img src="images/employee1.webp" alt="Rafting adventure">
+                <figcaption>Katherine Soza</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.webp" alt="Rafting adventure">
+                <figcaption> Fabio Torres </figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.webp" alt="Rafting adventure">
+                <figcaption>Celena Díaz</figcaption>
+            </figure>
+        </section>
+        <section class="join">
+			<h2>Join Us</h2>
+            <img src="images/rafting36_1024.webp" alt="Rafting sight">
+            <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--form elements will go here-->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!--form elements will go here-->
+                <label for="browser">What is your favorite browser?</label>
+                <div class="form-item column1">
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+        </section>
+        <section class="history">
+			<h2> Company Information</h2>
+                <div class="hero">
+                <p>Address: <br>Av. San Juan #000 <br><br>
+                Phone Numbers:<br> +51 000 000 000<br>+51 000 000 000<br><br>
+                Email: <br>asdf@gml.com<br>
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234225.00710047505!2d-80.6964866994051!3d-5.19537885638791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a107c793c39b7%3A0x1de8948d1c01fe28!2sPiura!5e0!3m2!1ses-419!2spe!4v1754156319164!5m2!1ses-419!2spe" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
-
-
-
     <footer>
         <p> &copy;2025 ✨Rafting Travel Land &#10070;Janisse Rodriguez</p>
         <nav class="socialmedia">
@@ -34,7 +105,7 @@
                 <img src="images/facebook.svg" alt="Facebook Icon Link" width="30">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter.svg" alt="Twitter Icon Link" width="30">
+                <img src="images/x-twiiter.svg" alt="Twitter Icon Link" width="30">
             </a>
             <a href="https://instagram.com">
                 <img src="images/instagram.svg" alt="Instagram Icon Link" width="30">

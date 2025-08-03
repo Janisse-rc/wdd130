@@ -50,8 +50,8 @@ header nav a {              /*It is required to type "a" too*/
 }
 /* Scheme History*/
 .history{
-    border-style: solid;
-    border-width: 3px;
+    /*border-style: solid;
+    border-width: 3px;*/
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -69,21 +69,22 @@ header nav a {              /*It is required to type "a" too*/
 
 /*Scheme Adventure Awaits you*/
 .images{
-    border-style: solid;
-    border-width: 3px;
+    /*border-style: solid;
+    border-width: 3px;*/
     padding: 15px;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
     margin: 20px;
 
     gap: 20px;  /*"gap" creates the space between each column*/
-    justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
 /*The 5 images*/
 figure img{             /*It is required to code as img*/
     width: 8rem;
+    height: 10rem;
 }
 
 figure figcaption{
