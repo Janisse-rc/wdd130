@@ -37,22 +37,19 @@
     margin-top: 7rem;
     margin-bottom: 7rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr;
     grid-column-start: 2;
     grid-column-end: 3;
-    justify-items: flex-start;
-    align-items: flex-start;
 }
 
 .join h2{
     grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    justify-content: flex-start;   
+    grid-column-end: 2;
     position: absolute;
     color: #fff;
     padding: 65px;
+    padding-right: 0;
     font-size: 50px;
 }
 
@@ -65,37 +62,76 @@
 
 .join form{
     display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     position: absolute;
-    width: 15rem;
-    padding: 16px;
-    justify-content: center;
-    align-content: center;
+    width: 21rem;
 }
 
 /*Form*/
 form {
-    width: 650px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
-    background-color: #eee;
-    display: grid;
+    background-color: #fff4c8;
+    justify-self: center;
+    align-self: center;
 }
 
+fieldset {
+    border: 1.8px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
 
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+legend {
+    font-family: "Playfair Display", serif;
+    padding: 0.3rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+
+}
+
+label {
+    text-align: left; /*changed from right to left*/
+    padding: 0.3em;
+    font-size: 0.9em;
+}
+
+textarea{
+    width: 16rem;
+}
 button {
-    margin: 1rem;
-    background-color: navy;
+    margin: 0.5rem;
+    background-color: rgb(68, 68, 255);
     color: #fff;
     border: none;
     border-radius: .5rem;
+    height: 2rem;
 }
 
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
     vertical-align: bottom;
+    justify-self: center;
 }
+
+/*Footer Wireframe*/
+.footer-menu {
+    justify-self: flex-start;
+    align-self: center;
+    text-decoration: none;
+}
+
+
+
