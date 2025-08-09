@@ -204,3 +204,150 @@ article {
     float: right;
     width: 125px;
 }
+
+/*Rafting Style CSS #2 (rafting2.css)*/
+/*The other styles of Contact Us page in the Rafting Web*/
+
+/*Three Employees and Three Best Trips*/
+.employees {
+    padding: 15px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin: 20px;
+
+    gap: 20px;  /*"gap" creates the space between each column*/
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.employees h2{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order: -2;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+/*Google Maps*/
+.history iframe{
+    width: 35rem;
+    height: 20rem;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/*Join Us*/
+.join {
+    position: relative;
+    display: block;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.join h2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: absolute;
+    color: #fff;
+    padding: 65px;
+    padding-right: 0;
+    font-size: 50px;
+}
+
+.join img{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 500px;
+    width: 100%;
+}
+
+.join form{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    width: 21rem;
+}
+
+/*Form*/
+form {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff4c8;
+    justify-self: center;
+    align-self: center;
+}
+
+fieldset {
+    border: 1.8px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+legend {
+    font-family: "Playfair Display", serif;
+    padding: 0.3rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+
+}
+
+label {
+    text-align: left; /*changed from right to left*/
+    padding: 0.3em;
+    font-size: 0.9em;
+}
+
+textarea{
+    width: 16rem;
+}
+button {
+    margin: 0.5rem;
+    background-color: rgb(0, 0, 119);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    height: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    justify-self: center;
+}
+
+/*Footer Wireframe*/
+.footer-menu {
+    justify-self: flex-start;
+    align-self: center;
+    text-decoration: none;
+}
+
+.join a {
+    align-self: center;
+    justify-self: center;
+    font-family: var(--heading-font);
+}
+
+
+
