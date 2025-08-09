@@ -1,6 +1,6 @@
 /*The other styles of Contact Us page in the Rafting Web*/
 
-/*Three Employees*/
+/*Three Employees and Three Best Trips*/
 .employees {
     padding: 15px;
     display: grid;
@@ -10,6 +10,7 @@
     gap: 20px;  /*"gap" creates the space between each column*/
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 
 .employees h2{
@@ -20,6 +21,7 @@
     justify-content: center;
     align-items: center;   
 }
+
 
 /*Google Maps*/
 .history iframe{
@@ -133,5 +135,9 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
+.join a {
+    align-self: center;
+    justify-self: center;
+}
 
 

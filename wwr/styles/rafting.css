@@ -79,6 +79,7 @@ header nav a {              /*It is required to type "a" too*/
     gap: 20px;  /*"gap" creates the space between each column*/
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 
 /*The 5 images*/
@@ -88,7 +89,6 @@ figure img{             /*It is required to code as img*/
 }
 
 figure figcaption{
-    display: grid;
     justify-content: center;
     align-items: center;
 }
