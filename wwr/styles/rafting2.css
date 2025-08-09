@@ -138,6 +138,7 @@ input[type="checkbox"] {
 .join a {
     align-self: center;
     justify-self: center;
+    font-family: var(--heading-font);
 }
 
 
